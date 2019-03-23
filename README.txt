@@ -1,27 +1,26 @@
-_Letters are shown capitalized for readability only._  _Capslock should be off._
 ## SHORTCUTS
 
 | Key/Command | Description |
 | ----------- | ----------- |
-| Ctrl + A   | Go to the beginning of the line you are currently typing on.  This also works for most text input fields system wide.  Netbeans being one exception |
-| Ctrl + E   | Go to the end of the line you are currently typing on.  This also works for most text input fields system wide.  Netbeans being one exception |
-| Ctrl + L   | Clears the Screen |
-| Cmd + K    | Clears the Screen |
-| Ctrl + U   | Cut everything backwards to beginning of line |
-| Ctrl + K   | Cut everything forward to end of line |
-| Ctrl + W   | Cut one word backwards using white space as delimiter |
-| Ctrl + Y   | Paste whatever was cut by the last cut command |
-| Ctrl + H   | Same as backspace |
-| Ctrl + C   | Kill whatever you are running.  Also clears everything on current line |
-| Ctrl + D   | Exit the current shell when no process is running, or send EOF to a the running process |
-| Ctrl + Z   | Puts whatever you are running into a suspended background process. fg restores it |
+| Ctrl + a   | Go to the beginning of the line you are currently typing on.  This also works for most text input fields system wide.  Netbeans being one exception |
+| Ctrl + e   | Go to the end of the line you are currently typing on.  This also works for most text input fields system wide.  Netbeans being one exception |
+| Ctrl + l   | Clears the Screen |
+| Cmd + k    | Clears the Screen |
+| Ctrl + u   | Cut everything backwards to beginning of line |
+| Ctrl + k   | Cut everything forward to end of line |
+| Ctrl + w   | Cut one word backwards using white space as delimiter |
+| Ctrl + y   | Paste whatever was cut by the last cut command |
+| Ctrl + h   | Same as backspace |
+| Ctrl + c   | Kill whatever you are running.  Also clears everything on current line |
+| Ctrl + d   | Exit the current shell when no process is running, or send EOF to a the running process |
+| Ctrl + z   | Puts whatever you are running into a suspended background process. fg restores it |
 | Ctrl + _   | Undo the last command. (Underscore.  So it's actually Ctrl + Shift + minus) |
-| Ctrl + T   | Swap the last two characters before the cursor |
-| Ctrl + F   | Move cursor one character forward |
-| Ctrl + B   | Move cursor one character backward |
+| Ctrl + t   | Swap the last two characters before the cursor |
+| Ctrl + f   | Move cursor one character forward |
+| Ctrl + b   | Move cursor one character backward |
 | Option + →  | Move cursor one word forward |
 | Option + ←  | Move cursor one word backward |
-| Esc + T  | Swap the last two words before the cursor |
+| Esc + t  | Swap the last two words before the cursor |
 | Esc + Backspace | Cut one word backwards using none alphabetic characters as delimiters |
 | Tab  | Auto-complete files and folder names |
 
@@ -37,6 +36,7 @@ _Letters are shown capitalized for readability only._  _Capslock should be off._
 | ls | Short listing |
 | ls -l | Long listing |
 | ls -a | Listing incl. hidden files |
+| ls -la | Long listing incl. hidden files |
 | ls -lh| Long listing with Human readable file sizes |
 | ls -R | Entire content of folder recursively |
 | sudo [command] | Run command with the security privileges of the superuser (Super User DO) |
@@ -45,6 +45,17 @@ _Letters are shown capitalized for readability only._  _Capslock should be off._
 | nano [file] | Opens the file using the nano editor |
 | clear |  Clears the screen |
 | reset |  Resets the terminal display |
+
+## CHAINING COMMANDS
+
+| Key/Command | Description |
+| ----------- | ----------- |
+| [command-a]; [command-b] | Run command A and then B, regardless of success of A |
+| [command-a] && [command-b] | Run command B if A succeeded |
+| [command-a] \|\| [command-b] | Run command B if A failed |
+| [command-a] & | Run command A in background |
+
+
 ## COMMAND HISTORY
 
 | Key/Command | Description |
@@ -57,6 +68,7 @@ _Letters are shown capitalized for readability only._  _Capslock should be off._
 | !!:p |  Print to the console the last command typed |
 
 ## FILE MANAGEMENT
+
 | Key/Command | Description |
 | ----------- | ----------- |
 | touch [file] |   Create a new file |
@@ -107,9 +119,7 @@ _Letters are shown capitalized for readability only._  _Capslock should be off._
 | Key/Command | Description |
 | ----------- | ----------- |
 | [command] -h |  Offers help |
-| [command] --help | Offers help |
 | info [command] | Offers help |
 | man [command] |  Show the help manual for [command] |
 | whatis [command] | Gives a one-line description of [command] |
 | apropos [search-pattern] | Searches for command with keywords in description |
-
